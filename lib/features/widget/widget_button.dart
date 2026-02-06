@@ -1,17 +1,18 @@
-
 import 'package:flutter/material.dart';
 
 import '../../core/theme/color/app_color.dart';
 
 class WidgetButton extends StatelessWidget {
+  final String text;
+   final  Function() onPressed;
   const WidgetButton({
-    super.key,
+    super.key, required this.text, required this.onPressed,
   });
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: () {},
+      onPressed: onPressed,
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
@@ -20,7 +21,7 @@ class WidgetButton extends StatelessWidget {
         backgroundColor: AppColor.primary,
       ),
       child: Text(
-        "Get Started",
+        text,
         style: TextStyle(
           color: Colors.white,
           fontSize: 26,
