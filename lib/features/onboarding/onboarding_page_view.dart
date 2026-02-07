@@ -1,6 +1,8 @@
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:go_router/go_router.dart';
+import 'package:kcal/route/app_routes.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import '../../core/theme/color/app_color.dart';
 import '../model/onboarding_model.dart';
@@ -52,7 +54,7 @@ class OnboardingPageView extends StatelessWidget {
                     curve: Curves.easeInOut,
                   );
                 } else {
-                  Navigator.pushReplacementNamed(context, "/login");
+                  context.go(Routes.home);
                 }
               },
             ),
