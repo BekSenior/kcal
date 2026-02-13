@@ -3,12 +3,12 @@ import 'package:go_router/go_router.dart';
 
 import '../features/splash/splash_screen.dart';
 import '../features/onboarding/onboarding_page_view.dart';
-import '../features/home/home_page.dart';
+import '../features/home/presentation/pages/home_page.dart';
 import '../features/search/search_page.dart';
 import '../features/camera/camera_page.dart';
 import '../features/favourite/favourite_page.dart';
 import '../features/profile/profile_page.dart';
-import '../features/home/home_screen.dart';
+import '../features/home/presentation/pages/home_screen.dart';
 
 part 'name_routes.dart';
 
