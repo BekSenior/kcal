@@ -21,6 +21,8 @@
 import 'package:flutter/material.dart';
 import 'package:kcal/route/app_routes.dart';
 
+import '../core/theme/color/app_color.dart';
+
 class App extends StatelessWidget {
   const App({super.key});
 
@@ -36,9 +38,10 @@ class App extends StatelessWidget {
         splashFactory: NoSplash.splashFactory,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
-        appBarTheme: const AppBarTheme(
+        appBarTheme: AppBarTheme(
           backgroundColor: Colors.white,
-          foregroundColor: Colors.deepPurple,
+          foregroundColor: AppColor.black,
+          centerTitle: true,
           elevation: 0,
         ),
         bottomNavigationBarTheme: const BottomNavigationBarThemeData(
@@ -51,15 +54,14 @@ class App extends StatelessWidget {
         ),
         textTheme: const TextTheme(
           bodyMedium: TextStyle(fontSize: 16, color: Colors.black),
-          titleLarge: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          titleLarge: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+            fontFamily: 'Signika-VariableFont',
+          ),
         ),
       ),
       routerConfig: router,
     );
   }
 }
-
-
-
-
-

@@ -9,6 +9,7 @@ sealed class AppColor{
   static const Color orangeShadow = Color(0xFFF6A79E);
   static const Color white = Color(0xFFFFFFFF);
   static const Color gray50 = Color(0xFFF4F4F4);
+  static const Color black = Color(0xFF000000);
 }
 
 

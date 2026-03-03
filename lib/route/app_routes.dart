@@ -47,7 +47,7 @@ final GoRouter router = GoRouter(
         GoRoute(
           path: Routes.search,
           name: Routes.search,
-          builder: (_, __) => const SearchPage(),
+          builder: (_, __) => const SearchPage(image: '', title: '',),
         ),
         GoRoute(
           path: Routes.camera,
